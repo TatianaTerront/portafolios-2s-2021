@@ -1,0 +1,183 @@
+@font-face {
+    font-family: EditorialNew;
+    src: url('./fonts/EditorialNew-Light.otf');
+  }
+  
+  .wrap-content {
+    height: 100vh;
+    display: block;
+    background-color: #fff;
+    width: 100%;
+    overflow: hidden;
+  
+    .white {
+      background-color: #fff;
+      height: 100%;
+      width: 49.5%;
+      display: inline-block;
+      color: #000;
+      vertical-align: top;
+  
+      .white-container {
+        padding: 40px 50px 20px 10%;
+        height: 100%;
+        position: relative;
+  
+        .preview-window {
+          height: 75%;
+        }
+      }
+  
+      h1 {
+        color: #000;
+        font-family: 'EditorialNew';
+        font-weight: lighter;
+        font-size: 60px;
+        line-height: 1;
+        position: relative;
+  
+        span {
+          margin-left: 60px;
+          color: gray;
+  
+          &:before {
+            content: '';
+            width: 50px;
+            height: 3px;
+            background-color: #34F545;
+            display: block;
+            position: absolute;
+            top: 20px;
+          }
+        }
+      }
+  
+      .white-container .footer {
+        bottom: 0;
+        position: relative;
+        width: 100%;
+        display: block;
+        line-height: 1;
+        margin: 0;
+        padding: 0;
+  
+        p {
+          font-size: 20px;
+          font-family: 'Times New Roman', Times, serif;
+          color: #212121;
+        }
+  
+        .footer-left {
+          display: inline-block;
+        }
+  
+        .footer-right {
+          display: inline-block;
+          text-align: right;
+          position: absolute;
+          right: 0;
+        }
+      }
+    }
+  
+    .green {
+      background-color: #34F545;
+      width: 50%;
+      height: 100%;
+      display: inline-block;
+  
+      .green-container {
+        margin: 20px 10% 20px 20px;
+        overflow-y: scroll;
+        height: 90%;
+  
+        .table-title {
+          color: #212121;
+          font-size: 12px;
+          text-transform: uppercase;
+  
+          p {
+            width: 49%;
+            display: inline-block;
+            font-family: 'Sora', sans-serif;
+          }
+        }
+  
+        .table-items {
+          padding: 50px 0 0;
+  
+          .item {
+            border-bottom: solid 1px #212121;
+            padding: 10px 0 8px 0;
+  
+            .name {
+              width: 49%;
+              display: inline-block;
+              font-family: 'Sora', sans-serif;
+              font-weight: 600;
+              color: #212121;
+              font-size: 18px;
+              margin: 0;
+              text-decoration: none;
+              transition: all 0.3s ease;
+  
+              &:hover {
+                color: #fff;
+              }
+  
+              p {
+                margin: 0;
+              }
+            }
+  
+            .description {
+              width: 49%;
+              display: inline-block;
+              font-family: 'Sora', sans-serif;
+              font-size: 18px;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .wrap-content {
+      overflow: initial;
+  
+      .white {
+        h1 {
+          font-size: 36px;
+        }
+  
+        width: 100%;
+        display: block;
+      }
+  
+      .green {
+        width: 100% !important;
+        display: block;
+      }
+  
+      .white .white-container {
+        padding: 40px;
+      }
+  
+      .green {
+        height: auto !important;
+  
+        .green-container {
+          margin: 20px !important;
+          overflow-y: initial !important;
+          height: auto !important;
+        }
+      }
+    }
+  }
+  
+  .preview-window img {
+    display: none;
+    transition: all 0.5s ease;
+  }

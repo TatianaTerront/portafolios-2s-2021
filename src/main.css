@@ -1,0 +1,181 @@
+@font-face {
+    font-family: EditorialNew;
+    src: url('./fonts/EditorialNew-Light.otf');
+  }
+
+.wrap-content {
+    height: 100vh;
+    display: block;
+    background-color: #fff;
+    width: 100%;
+    overflow: hidden;
+}
+.wrap-content .white {
+    background-color: #fff;
+    height: 100%;
+    width: 49.5%;
+    display: inline-block;
+    color: #000;
+    vertical-align: top;
+}
+
+.wrap-content .white .white-container {
+    padding: 40px 50px 20px 10%;
+    height: 100%;
+    position: relative;
+}
+
+.wrap-content .white .white-container .preview-window {
+    height: 75%;
+}
+
+.wrap-content .white h1 {
+    color: #000;
+    font-family: 'EditorialNew';
+    font-weight: lighter;
+    font-size: 60px;
+    line-height: 1;
+    position: relative;
+}
+
+@media screen and (max-width:768px) {
+
+    .wrap-content {
+        overflow: initial;
+    }
+
+    .wrap-content .white h1 {
+        font-size: 36px;
+    }
+
+    .wrap-content .white {
+        width: 100%;
+        display: block;
+    }
+
+    .wrap-content .green {
+        width: 100% !important;
+        display: block;
+    }
+
+    .wrap-content .white .white-container {
+        padding: 40px;
+    }
+
+    .wrap-content .green {
+        height: auto !important;
+    }
+    .wrap-content .green .green-container {
+        margin: 20px !important;
+        overflow-y: initial !important;
+        height: auto !important;
+    }
+}
+.wrap-content .white h1 span {
+    margin-left: 60px;
+    color: gray;
+}
+
+.wrap-content .white h1 span:before {
+    content: '';
+    width: 50px;
+    height: 3px;
+    background-color: #34F545;
+    display: block;
+    position: absolute;
+    top: 20px;
+}
+
+.wrap-content .white .white-container .footer {
+    bottom: 0;
+    position: relative;
+    width: 100%;
+    display: block;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.wrap-content .white .white-container .footer p {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #212121;
+}
+
+.wrap-content .white .white-container .footer .footer-left {
+    display: inline-block;
+}
+
+.wrap-content .white .white-container .footer .footer-right {
+    display: inline-block;
+    text-align: right;
+    position: absolute;
+    right: 0;
+}
+
+.wrap-content .green {
+    background-color: #34F545;
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+}
+
+.wrap-content .green .green-container {
+    margin: 20px 10% 20px 20px;
+    overflow-y: scroll;
+    height: 90%;
+}
+
+.wrap-content .green .green-container .table-title {
+    color: #212121;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.wrap-content .green .green-container .table-title p {
+    width: 49%;
+    display: inline-block;
+    font-family: 'Sora', sans-serif;
+}
+
+.wrap-content .green .green-container .table-items {
+    padding: 50px 0 0;
+}
+
+.wrap-content .green .green-container .table-items .item {
+    border-bottom: solid 1px #212121;
+    padding: 10px 0 8px 0;
+}
+
+.wrap-content .green .green-container .table-items .item .name {
+    width: 49%;
+    display: inline-block;
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+    color: #212121;
+    font-size: 18px;
+    margin: 0;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.wrap-content .green .green-container .table-items .item .name:hover {
+    color: #fff;
+}
+
+.wrap-content .green .green-container .table-items .item .name p {
+    margin: 0;
+}
+
+.wrap-content .green .green-container .table-items .item .description {
+    width: 49%;
+    display: inline-block;
+    font-family: 'Sora', sans-serif;
+    font-size: 18px;
+    margin: 0;
+}
+
+.preview-window img {
+    display: none;
+    transition: all 0.5s ease;
+}
